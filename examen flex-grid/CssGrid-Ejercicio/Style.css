@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* section-box */
+
+.contenedor-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  margin: 20px ;
+  height: 900px;
+}
+
+.box1 {
+  background-color: salmon;
+  grid-row: 1/3;
+}
+.box2 {
+  background-color: black;
+}
+.box3 {
+  background-color: black;
+}
+.box4 {
+  background-color: black;
+}
+.box5 {
+  background-color: black;
+}
+.box6 {
+  background-color: rgb(6, 115, 151);
+  grid-column: 1/4;
+}

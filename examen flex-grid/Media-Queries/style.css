@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* header */
+
+.contenedor-head {
+  background-color: rgb(223, 215, 215);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 100%;
+}
+
+.boton1 {
+  background-color: rgb(207, 40, 152);
+  height: 40px;
+  margin-left: 20px;
+  width: 120px;
+}
+
+.buttom-set {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.buttom-set div {
+  background-color: red;
+  border: 2px solid black;
+  height: 30px;
+  margin-left: 15px;
+  width: 70px;
+}
+
+/* section */
+
+.contenedor-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 625px;
+}
+.contenedor-box div {
+  background-color: #07b60d;
+  height: 160px;
+  margin: 10px;
+  width: 251px;
+}
+
+@media screen and (max-width:768px){
+  .contenedor-head{
+    height: 54px;
+  }
+    .boton1{
+      height:27px;
+      width:75px;
+    }
+    .buttom-set{
+      background-color: #6eb9e3;
+      height: 27px;
+      width: 75px;
+    }
+      .buttom-set div{
+        display: none;
+      }
+
+      .contenedor-box{
+        flex-direction: column;
+      }
+      .contenedor-box div{
+        margin: 20px;
+      }
+}
